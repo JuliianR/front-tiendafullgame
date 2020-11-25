@@ -5,7 +5,7 @@ import { global } from './global';
 
 @Injectable()
 
-export class JuegoService {
+export class ClienteService {
 	public url: string;
 
 	constructor(
@@ -14,31 +14,31 @@ export class JuegoService {
 		this.url = global.url;
 	}
 
-	create(juego): Observable<any>{
-		let json = JSON.stringify(juego);
+	create(cliente): Observable<any>{
+		let json = JSON.stringify(cliente);
 
 		let headers = new HttpHeaders().set('Content-Type', 'application/json');
 		
-		return this._http.post(this.url + 'juegos', json, {headers: headers});
+		return this._http.post(this.url + 'clientes', json, {headers: headers});
 	}
 
-	update(juego): Observable<any>{
-		let json = JSON.stringify(juego);
+	update(cliente): Observable<any>{
+		let json = JSON.stringify(cliente);
 
 		let headers = new HttpHeaders().set('Content-Type', 'application/json');
 		
-		return this._http.put(this.url + 'juegos', json, {headers: headers});
+		return this._http.put(this.url + 'clientes', json, {headers: headers});
 	}
 
-	getJuegos(): Observable<any>{
+	getClientes(): Observable<any>{
 		let headers = new HttpHeaders().set('Content-Type','application/json');
 
-		return this._http.get(this.url + 'juegos', {headers:headers});
+		return this._http.get(this.url + 'clientes', {headers:headers});
 	}
 
-	getJuego(id): Observable<any>{
+	getCliente(id): Observable<any>{
 		let headers = new HttpHeaders().set('Content-Type','application/json');
 
-		return this._http.get(this.url + 'juegos/' + id, {headers:headers});
+		return this._http.get(this.url + 'clientes/' + id, {headers:headers});
 	}
 }

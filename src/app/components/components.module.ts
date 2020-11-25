@@ -12,6 +12,9 @@ import { EditGameComponent } from './edit-game/edit-game.component';
 import { ListGameComponent } from './list-game/list-game.component';
 import { CreateTecnologyGameComponent } from './create-tecnology-game/create-tecnology-game.component';
 import { ListTecnologyGameComponent } from './list-tecnology-game/list-tecnology-game.component';
+import { RegisterClientComponent } from './register-client/register-client.component';
+import { ListClientsComponent } from './list-clients/list-clients.component';
+import { EditClientComponent } from './edit-client/edit-client.component';
 
 @NgModule({
     imports: [
@@ -29,6 +32,9 @@ import { ListTecnologyGameComponent } from './list-tecnology-game/list-tecnology
         ListGameComponent,
         CreateTecnologyGameComponent,
         ListTecnologyGameComponent,
+        RegisterClientComponent,
+        ListClientsComponent,
+        EditClientComponent,
     ],
     exports:[ ComponentsComponent ]
 })

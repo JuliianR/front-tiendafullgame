@@ -9,6 +9,9 @@ import { EditGameComponent } from './components/edit-game/edit-game.component';
 import { ListGameComponent } from './components/list-game/list-game.component';
 import { CreateTecnologyGameComponent } from './components/create-tecnology-game/create-tecnology-game.component';
 import { ListTecnologyGameComponent } from './components/list-tecnology-game/list-tecnology-game.component';
+import { RegisterClientComponent } from './components/register-client/register-client.component';
+import { ListClientsComponent } from './components/list-clients/list-clients.component';
+import { EditClientComponent } from './components/edit-client/edit-client.component';
 
 const routes: Routes =[
     { path: '', component: ComponentsComponent },
@@ -19,6 +22,9 @@ const routes: Routes =[
     { path: 'create-tecnology-game', component: CreateTecnologyGameComponent},
     { path: 'create-tecnology-game/:id', component: CreateTecnologyGameComponent},
     { path: 'list-tecnology-game', component: ListTecnologyGameComponent},
+    { path: 'register-client', component: RegisterClientComponent},
+    { path: 'list-clients', component: ListClientsComponent},
+    { path: 'edit-client/:id', component: EditClientComponent},
 ];
 
 
