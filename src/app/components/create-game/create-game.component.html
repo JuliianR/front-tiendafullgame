@@ -12,11 +12,12 @@
                 <hr>
             </div>
             <div class="alert alert-success col-md-12" *ngIf="status == 'success'">
-				El juego ha sido guardado de manera exitosa.
+				<p>El juego ha sido guardado de manera exitosa.<p>
+				<p *ngIf="!isEdit">Recuerda registrar las plataformas vinculadas a este juego a través del siguiente enlace: <a [routerLink]="['/create-tecnology-game', juego.ideJuego]">Registrar Plataformas</a></p>
 			</div>
 
 			<div class="alert alert-danger col-md-12" *ngIf="status == 'error'">
-				Ocurrio un error al guardar el registro del juego.
+				<p>Ocurrio un error al guardar el registro del juego.</p>
 			</div>
             <!-- Formulario de registro-->
 			<form class="col-md-12 mt-3" #gameForm="ngForm" (ngSubmit)="onSubmit(gameForm)">

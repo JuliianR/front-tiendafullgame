@@ -16,16 +16,9 @@
                 <li class="nav-item">
                     <a [routerLink]="['/home']" class="nav-link"><i class="fa fa-truck"></i>Alquileres</a>
                 </li>
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="true"><i class="fa fa-gamepad"></i>Juegos</a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" [routerLink]="['/create-game']">Crear Juego</a>
-                        <a class="dropdown-item" [routerLink]="['/home']">Listar Juegos</a>
-                        
-                      </div>
-                    </li>
-                  </ul>
+                <li class="nav-item">
+                    <a [routerLink]="['/list-game']" class="nav-link"><i class="fa fa-gamepad"></i>Juegos</a>
+                </li>
                 <li class="nav-item">
                     <a [routerLink]="['/home']" class="nav-link"><i class="fa fa-pie-chart"></i>Ventas</a>
                 </li>

@@ -44,7 +44,7 @@ export class CreateGameComponent implements OnInit {
   	this._juegoService.create(this.juego).subscribe(
     response => {
      	this.status = 'success';
-     	this.juego = new Juego(null,'','',0,-1,-1,-1,0);
+       this.juego = response;
      	form.reset();
     },
     error => {

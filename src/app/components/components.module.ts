@@ -10,6 +10,8 @@ import { ComponentsComponent } from './components.component';
 import { CreateGameComponent } from './create-game/create-game.component';
 import { EditGameComponent } from './edit-game/edit-game.component';
 import { ListGameComponent } from './list-game/list-game.component';
+import { CreateTecnologyGameComponent } from './create-tecnology-game/create-tecnology-game.component';
+import { ListTecnologyGameComponent } from './list-tecnology-game/list-tecnology-game.component';
 
 @NgModule({
     imports: [
@@ -25,6 +27,8 @@ import { ListGameComponent } from './list-game/list-game.component';
         CreateGameComponent,
         EditGameComponent,
         ListGameComponent,
+        CreateTecnologyGameComponent,
+        ListTecnologyGameComponent,
     ],
     exports:[ ComponentsComponent ]
 })
