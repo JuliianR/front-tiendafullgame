@@ -7,6 +7,9 @@ import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
 import { RouterModule } from '@angular/router';
 
 import { ComponentsComponent } from './components.component';
+import { CreateGameComponent } from './create-game/create-game.component';
+import { EditGameComponent } from './edit-game/edit-game.component';
+import { ListGameComponent } from './list-game/list-game.component';
 
 @NgModule({
     imports: [
@@ -19,6 +22,9 @@ import { ComponentsComponent } from './components.component';
     ],
     declarations: [
         ComponentsComponent,
+        CreateGameComponent,
+        EditGameComponent,
+        ListGameComponent,
     ],
     exports:[ ComponentsComponent ]
 })
