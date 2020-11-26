@@ -14,10 +14,27 @@ export class ListAlquilerComponent implements OnInit {
 
 	public alquileres: Array<Alquiler>;
 	public url;
+  private dia;
+  private mes;
+  private hoy;
+  private fechaHoy;
+
   constructor(
   		private _alquilerService: AlquilerService
   	) { 
   		this.url = global;
+      this.hoy = new Date();
+      this.dia = this.hoy.getDate();
+      this.mes = this.hoy.getMonth()+1;
+      if(this.dia<10) {
+          this.dia='0'+this.dia;
+      } 
+
+      if(this.mes<10) {
+          this.mes='0'+this.mes;
+      } 
+      this.fechaHoy = this.hoy.getFullYear() + '-' + this.mes + '-' + this.dia;
+      console.log(this.fechaHoy);
   }
 
   ngOnInit(): void {
@@ -35,4 +52,19 @@ export class ListAlquilerComponent implements OnInit {
   	)
   }
 
+  resetForm(){
+    this.ngOnInit();
+  }
+
+  getVentaDia(){
+    this._alquilerService.getVentaDia(this.fechaHoy).subscribe(
+      response => {
+        this.alquileres = response;
+      },
+      error => {
+        console.log(<any>error);
+        this.alquileres = null;
+      }
+    )
+  }
 }

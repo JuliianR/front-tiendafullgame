@@ -41,4 +41,22 @@ export class JuegoService {
 
 		return this._http.get(this.url + 'juegos/' + id, {headers:headers});
 	}
+
+	getJuegosByProtagonista(id): Observable<any>{
+		let headers = new HttpHeaders().set('Content-Type','application/json');
+
+		return this._http.get(this.url + 'juegos/protagonista/' + id, {headers:headers});
+	}
+
+	getJuegosByDirector(id): Observable<any>{
+		let headers = new HttpHeaders().set('Content-Type','application/json');
+
+		return this._http.get(this.url + 'juegos/director/' + id, {headers:headers});
+	}
+
+	getJuegosByMarca(id): Observable<any>{
+		let headers = new HttpHeaders().set('Content-Type','application/json');
+
+		return this._http.get(this.url + 'juegos/marca/' + id, {headers:headers});
+	}
 }

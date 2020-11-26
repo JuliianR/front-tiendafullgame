@@ -47,4 +47,22 @@ export class AlquilerService {
 
 		return this._http.get(this.url + 'alquileres/precio/' + precio + '/' + fechaInicio + '/' + FechaFin, {headers:headers});
 	}
+
+	getJuegoMaxAlquilado(): Observable<any>{
+		let headers = new HttpHeaders().set('Content-Type','application/json');
+
+		return this._http.get(this.url + 'alquileres/juego-max-alquilado', {headers:headers});
+	}
+
+	getVentaDia(fecha): Observable<any>{
+		let headers = new HttpHeaders().set('Content-Type','application/json');
+
+		return this._http.get(this.url + 'alquileres/fecha-inicio/' + fecha, {headers:headers});
+	}
+
+	getClienteFrecuente(): Observable<any>{
+		let headers = new HttpHeaders().set('Content-Type','application/json');
+
+		return this._http.get(this.url + 'alquileres/cliente-frecuente', {headers:headers});
+	}
 }

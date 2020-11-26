@@ -44,7 +44,6 @@ export class CreateAlquilerComponent implements OnInit {
           this.mes='0'+this.mes;
       } 
       this.fechaHoy = this.hoy.getFullYear() + '-' + this.mes + '-' + this.dia;
-      console.log(this.fechaHoy);
   		this.alquiler = new Alquiler(null, -1, '#', -1, this.fechaHoy,'',null);
   		this.url = global.url;
   		this.isEdit = false;

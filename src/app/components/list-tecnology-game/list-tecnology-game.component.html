@@ -23,9 +23,6 @@
 				      <th scope="col">Cod</th>
 				      <th scope="col">Titulo</th>
 				      <th scope="col">Descripción</th>
-				      <th scope="col">Protagonista</th>
-				      <th scope="col">Director</th>
-				      <th scope="col">Marca</th>
 				      <th scope="col">Plataforma</th>
 				      <th scope="col">Precio Alquiler</th>
 				      <th scope="col">Acción</th>
@@ -36,9 +33,6 @@
 				      <th scope="row">{{tecnologiaJuego.ideJuego}}</th>
 				      <td>{{tecnologiaJuego.juego.titulo}}</td>
 				      <td>{{tecnologiaJuego.juego.descripcion}}</td>
-				      <td>{{tecnologiaJuego.juego.protagonista.nombre}}</td>
-				      <td>{{tecnologiaJuego.juego.director.nombre}}</td>
-				      <td>{{tecnologiaJuego.juego.marca.nombre}}</td>
 				      <td>{{tecnologiaJuego.tecnologia.nombre}}</td>
 				      <td>{{tecnologiaJuego.juego.precioAlquiler}}</td>
 				      <td><a class="btn btn-primary mx-1 my-1 btn-sm" [routerLink]="['/edit-game', tecnologiaJuego.ideJuego]">Editar</a></td>
