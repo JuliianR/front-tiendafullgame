@@ -12,6 +12,8 @@ import { ListTecnologyGameComponent } from './components/list-tecnology-game/lis
 import { RegisterClientComponent } from './components/register-client/register-client.component';
 import { ListClientsComponent } from './components/list-clients/list-clients.component';
 import { EditClientComponent } from './components/edit-client/edit-client.component';
+import { ListAlquilerComponent } from './components/list-alquiler/list-alquiler.component';
+import { CreateAlquilerComponent } from './components/create-alquiler/create-alquiler.component';
 
 const routes: Routes =[
     { path: '', component: ComponentsComponent },
@@ -25,6 +27,8 @@ const routes: Routes =[
     { path: 'register-client', component: RegisterClientComponent},
     { path: 'list-clients', component: ListClientsComponent},
     { path: 'edit-client/:id', component: EditClientComponent},
+    { path: 'list-alquiler', component: ListAlquilerComponent},
+    { path: 'create-alquiler', component: CreateAlquilerComponent},
 ];
 
 

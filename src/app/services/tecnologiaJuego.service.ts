@@ -34,4 +34,10 @@ export class TecnologiaJuegoService {
 
 		return this._http.get(this.url + 'tecnologia-juegos/' + id, {headers:headers});
 	}
+
+	getTecnologiaJuegoByJuego(id): Observable<any>{
+		let headers = new HttpHeaders().set('Content-Type','application/json');
+
+		return this._http.get(this.url + 'tecnologia-juegos/juego/' + id, {headers:headers});
+	}
 }

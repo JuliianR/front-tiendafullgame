@@ -15,6 +15,8 @@ import { ListTecnologyGameComponent } from './list-tecnology-game/list-tecnology
 import { RegisterClientComponent } from './register-client/register-client.component';
 import { ListClientsComponent } from './list-clients/list-clients.component';
 import { EditClientComponent } from './edit-client/edit-client.component';
+import { ListAlquilerComponent } from './list-alquiler/list-alquiler.component';
+import { CreateAlquilerComponent } from './create-alquiler/create-alquiler.component';
 
 @NgModule({
     imports: [
@@ -35,6 +37,8 @@ import { EditClientComponent } from './edit-client/edit-client.component';
         RegisterClientComponent,
         ListClientsComponent,
         EditClientComponent,
+        ListAlquilerComponent,
+        CreateAlquilerComponent,
     ],
     exports:[ ComponentsComponent ]
 })
